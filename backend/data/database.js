@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+// console.log('Mongo URI:', process.env.MONGO_CONNECTION);
 
 export const connectDB = ()=>{
     mongoose.connect(process.env.MONGO_CONNECTION,
