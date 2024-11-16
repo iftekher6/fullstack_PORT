@@ -170,7 +170,7 @@ const HeroShowReel=()=>{
      
     }
 
-    const filteredSuggestion = projectsData.filter((suggestion, i) => {
+    const filteredSuggestion = (projectsData || []).filter((suggestion, i) => {
       // setDoSearch('')
        const data = suggestion.contentType.toLowerCase().includes(doSearch.toLowerCase())
           ||suggestion.client.client.toLowerCase().includes(doSearch.toLowerCase())
